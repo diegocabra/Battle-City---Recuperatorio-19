@@ -1,5 +1,6 @@
 package Tanque;
 
+import Visitor.Visitor;
 
 public class Jugador extends Tanque {
 
@@ -9,15 +10,11 @@ public class Jugador extends Tanque {
 	}
 
 	@Override
-	public void recibirdaño(int daño) {
+	public void aceptarVisitor(Visitor v) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void morir() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }

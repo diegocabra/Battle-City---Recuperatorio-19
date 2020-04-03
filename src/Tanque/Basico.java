@@ -1,6 +1,7 @@
 package Tanque;
 
 import Strategy.Incisiva;
+import Visitor.Visitor;
 
 public class Basico extends Enemigo {
 
@@ -10,22 +11,17 @@ public class Basico extends Enemigo {
 		}
 	
 	
-	public void setVida(int vida) {  //REVISAR REGULAR
-		this.vida = vida;
-		if (this.vida < 20)
-			changeStrategy(new Incisiva(this));
-			
-	}
-			
+				
 	public void recibirdaño(int daño) {
-		// TODO Auto-generated method stub
-
-	}
+		super.recibirdaño(daño);
+		if (vida<20)
+				changeStrategy(new Incisiva(this));
+			}
 
 	@Override
-	public void morir() {
+	public void aceptarVisitor(Visitor v) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	

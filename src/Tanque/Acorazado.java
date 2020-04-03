@@ -2,17 +2,20 @@ package Tanque;
 
 import Visitor.Visitor;
 
-public class Rapido extends Enemigo {
+public class Acorazado extends Enemigo{
 
 	
-	public Rapido() {
+	public Acorazado() {
 		super();
-		velocidadBase = 4;
+		velocidadBase = 7;
 	}
-	
+
+	@Override
 	public void aceptarVisitor(Visitor v) {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	
 
 }
