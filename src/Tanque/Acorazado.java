@@ -10,10 +10,13 @@ public class Acorazado extends Enemigo{
 		velocidadBase = 7;
 	}
 
+	public void recibirdaño(int daño) {
+		super.recibirdaño(daño/2); // Los tanques acorazado reciben la mitad del daño 
+		
+	}
 	@Override
 	public void aceptarVisitor(Visitor v) {
-		// TODO Auto-generated method stub
-		
+		v.visitarEnemigo(this);		
 	}
 	
 	

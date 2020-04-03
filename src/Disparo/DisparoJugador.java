@@ -8,7 +8,6 @@ public class DisparoJugador extends Disparo {
 		super(daño);
 		}
 
-
 	@Override
 	public void aceptarVisitor(Visitor v) {
 		// TODO Auto-generated method stub

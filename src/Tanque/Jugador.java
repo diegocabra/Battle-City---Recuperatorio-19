@@ -11,7 +11,7 @@ public class Jugador extends Tanque {
 
 	@Override
 	public void aceptarVisitor(Visitor v) {
-		// TODO Auto-generated method stub
+		v.visitarJugador(this);
 		
 	}
 

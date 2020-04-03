@@ -11,7 +11,7 @@ public class Rapido extends Enemigo {
 	}
 	
 	public void aceptarVisitor(Visitor v) {
-		// TODO Auto-generated method stub
+		v.visitarEnemigo(this);
 		
 	}
 
